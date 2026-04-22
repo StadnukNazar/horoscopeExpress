@@ -1,0 +1,47 @@
+<style>
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000;
+    color: white;
+    font-family: sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;             
+    background: #333333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+select, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #30363d;
+}
+    
+</style>
+
+<form action="/generate" method="POST">
+  <label for="sign">Оберіть знак:</label>
+  <select name="sign" id="sign">
+    <option value="Овен">Овен</option>
+    <option value="Телець">Телець</option>
+    
+  </select>
+  <select name="month" id="month">
+    <option value="Січень">Cічень</option>
+    <option value="Лютий">Лютий</option>
+    
+  </select>
+  
+  <button type="submit">Згенерувати гороскоп</button>
+</form>
