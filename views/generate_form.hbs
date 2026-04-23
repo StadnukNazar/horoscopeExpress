@@ -1,24 +1,29 @@
 <style>
 
 body {
+    background-image: url('/images/horoscope.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     margin: 0;
     display: flex;
+    margin-top: 0px;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #000000;
+    background-color: `#ff003737;
     color: white;
-    font-family: sans-serif;
+    font-family:'Calibri', sans-serif;
+    font-size: 28px;
 }
 
 form {
     display: flex;
     flex-direction: column; 
     gap: 15px;             
-    background: #333333;
+    background: rgba(0, 0, 0, 0);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     width: 300px;
 }
 
@@ -31,16 +36,34 @@ select, button {
 </style>
 
 <form action="/generate" method="POST">
-  <label for="sign">Оберіть знак:</label>
-  <select name="sign" id="sign">
-    <option value="Овен">Овен</option>
-    <option value="Телець">Телець</option>
-    
+  <label for="sign" style= "font-family: Calibri, sans-serif; font-size: 28px; font-color: black;">Оберіть знак:</label>
+  <select style= "font-family: Calibri, sans-serif; font-size: 16px;" name="sign" id="sign">
+    <option value="Козоріг">Козоріг♑</option>
+    <option value="Водолій">Водолій♒</option>
+    <option value="Риби">Риби♓</option>
+    <option value="Овен">Овен♈</option>
+    <option value="Телець">Телець♉</option>
+    <option value="Близнюки">Близнюки♊</option>
+    <option value="Рак">Рак♋</option>
+    <option value="Лев">Лев♌</option>
+    <option value="Діва">Діва♍</option>
+    <option value="Терези">Терези♎</option>
+    <option value="Скорпіон">Скорпіон♏</option>
+    <option value="Стрілець">Стрілець♐</option>
   </select>
-  <select name="month" id="month">
-    <option value="Січень">Cічень</option>
-    <option value="Лютий">Лютий</option>
-    
+  <select style="font-family: Calibri, sans-serif; font-size: 16px;" name="month" id="month">
+    <option value="Січень">Cічень🎄</option>
+    <option value="Лютий">Лютий🏔️</option>
+    <option value="Березень">Березень🌱</option>
+    <option value="Квітень">Квітень🌸</option>
+    <option value="Травень">Травень🌿</option>
+    <option value="Червень">Червень🌞</option>
+    <option value="Липень">Липень🌊</option>
+    <option value="Серпень">Серпень🍉</option>
+    <option value="Вересень">Вересень☁️</option>
+    <option value="Жовтень">Жовтень🎃</option>
+    <option value="Листопад">Листопад🍂</option>
+    <option value="Грудень">Грудень❄️</option>
   </select>
   
   <button type="submit">Згенерувати гороскоп</button>

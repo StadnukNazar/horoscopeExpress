@@ -18,7 +18,7 @@ router.get('/generate', (req, res) => {
 
 router.post('/generate', async (req, res) => {
     const { sign } = req.body;
-    const month = ``;
+    const month = `Квітень`;
     const text = `Для знаку ${sign} сьогодні буде чудовий день!`;
 
     try {
